@@ -36,6 +36,12 @@ if ( sizeof($request_array['events']) > 0 )
 		else if(($text== "ข้อมูลส่วนตัวของผู้พัฒนาระบบ")){
 			$reply_message = 'ชื่อนายพัสสน อุ้ยวงค์ศา อายุ 22ปี น้ำหนัก 75kg. สูง 182cm. ขนาดรองเท้าเบอร์ 11 US';
 		}
+		else if(($text== "ผ่านไหมครับ")){
+			$reply_message = 'ผ่าน หรือ ไม่ผ่าน?'
+		}
+	   	else if(($text== "ผ่าน")||($text == "OK")||($text == "โอเค")||($text == "ดีมาก")){
+			$reply_message = 'ขอบคุณครับบ'
+		}
 		else
 		{
 			$reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
