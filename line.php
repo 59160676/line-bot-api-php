@@ -37,17 +37,17 @@ if ( sizeof($request_array['events']) > 0 )
 			$reply_message = 'ชื่อนายพัสสน อุ้ยวงค์ศา อายุ 22ปี น้ำหนัก 75kg. สูง 182cm. ขนาดรองเท้าเบอร์ 11 US';
 		}
 		else
-// 		{
-// 			$reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
-//     		}
+		{
+			$reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
+    		}
    
    }
    else
-    //$reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
+    $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
   
   }
   else
-   //$reply_message = 'ระบบได้รับ Event '.ucfirst($event['type']).' ของคุณแล้ว';
+   $reply_message = 'ระบบได้รับ Event '.ucfirst($event['type']).' ของคุณแล้ว';
  
   if( strlen($reply_message) > 0 )
   {
